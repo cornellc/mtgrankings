@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Commander Deck Rankings</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            margin: 0;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .card-art {
+            width: 100px;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .player-cell {
+            padding: 4px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>MTG Commander Deck Rankings</h1>
+    <table id="rankings-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Commander Art</th>
+                <th>Commander</th>
+                <th>Score</th>
+                <th>Games</th>
+                <th>Wins</th>
+                <th>Win %</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+    <script>
+        const rankings = [{"Player":"Mark","Commander":"Firja, Judge of Valor","Score":1347.0,"Games":3,"Wins":3.0,"Win %":"100%","Second Commander":""},{"Player":"Trainer","Commander":"Ruxa, Patient Professor","Score":1321.0,"Games":3,"Wins":3.0,"Win %":"100%","Second Commander":""},{"Player":"Niall","Commander":"Sygg, River Cutthroat","Score":1318.0,"Games":3,"Wins":3.0,"Win %":"100%","Second Commander":""},{"Player":"Chris","Commander":"Feldon of the Third Path","Score":1267.0,"Games":3,"Wins":2.0,"Win %":"66.67%","Second Commander":""},{"Player":"Precon","Commander":"Bright-Palm, Soul Awakener","Score":1263.0,"Games":3,"Wins":2.0,"Win %":"66.67%","Second Commander":""},{"Player":"Chris","Commander":"Elenda, the Dusk Rose","Score":1260.0,"Games":3,"Wins":2.0,"Win %":"66.67%","Second Commander":""},{"Player":"Chris","Commander":"Krydle of Baldur's Gate","Score":1258.0,"Games":3,"Wins":2.0,"Win %":"66.67%","Second Commander":""},{"Player":"Trainer","Commander":"Bruenor Battlehammer","Score":1258.0,"Games":3,"Wins":2.0,"Win %":"66.67%","Second Commander":""},{"Player":"Chris","Commander":"Ayara, First of Locthwain","Score":1247.0,"Games":5,"Wins":2.0,"Win %":"40%","Second Commander":""},{"Player":"Precon","Commander":"Kasla, the Broken Halo","Score":1239.0,"Games":4,"Wins":2.0,"Win %":"50%","Second Commander":""},{"Player":"Mark","Commander":"Xira, the Golden Sting","Score":1225.0,"Games":5,"Wins":2.0,"Win %":"40%","Second Commander":""},{"Player":"Chris","Commander":"Lae'zel, Vlaakith's Champion","Score":1205.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":"Master Chef"},{"Player":"Niall","Commander":"Marisi, Breaker of the Coil","Score":1201.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":""},{"Player":"Niall","Commander":"The Council of Four","Score":1200.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":""},{"Player":"Mark","Commander":"Jarad, Golgari Lich Lord","Score":1197.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":""},{"Player":"Niall","Commander":"Shelob, Child of Ungoliant","Score":1196.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":""},{"Player":"Mark","Commander":"Elas il-Kor, Sadistic Pilgrim","Score":1196.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":""},{"Player":"Precon","Commander":"Sidar Jabari of Zhalfir","Score":1191.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":""},{"Player":"Chris","Commander":"Karazikar, the Eye Tyrant","Score":1190.0,"Games":3,"Wins":1.0,"Win %":"33.33%","Second Commander":""},{"Player":"Precon","Commander":"Brimaz, Spearhead of Phyrexia","Score":1178.0,"Games":4,"Wins":1.0,"Win %":"25%","Second Commander":""},{"Player":"Mark","Commander":"Caesar, Legion's Emperor","Score":1177.0,"Games":4,"Wins":1.0,"Win %":"25%","Second Commander":""},{"Player":"Mark","Commander":"Krenko, Baron of Tin Street","Score":1170.0,"Games":5,"Wins":1.0,"Win %":"20%","Second Commander":""},{"Player":"Niall","Commander":"Teferi, Mage of Zhalfir","Score":1152.0,"Games":5,"Wins":1.0,"Win %":"20%","Second Commander":""},{"Player":"Chris","Commander":"Fynn, the Fangbearer","Score":1142.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Chris","Commander":"Vega, the Watcher","Score":1142.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Precon","Commander":"Gimbal, Gremlin Prodigy","Score":1140.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Niall","Commander":"Talion, the Kindly Lord","Score":1140.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Niall","Commander":"Thantis, the Warweaver","Score":1138.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Mark","Commander":"Ojer Taq, Deepest Foundation","Score":1137.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Mark","Commander":"Mizzix of the Izmagnus","Score":1137.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Chris","Commander":"Lyra Dawnbringer","Score":1136.0,"Games":3,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Niall","Commander":"Eowyn, Shieldmaiden","Score":1117.0,"Games":4,"Wins":0.0,"Win %":"0%","Second Commander":""},{"Player":"Chris","Commander":"Vial Smasher the Fierce","Score":1115.0,"Games":4,"Wins":0.0,"Win %":"0%","Second Commander":"Prava of the Steel Legion"},{"Player":"Mark","Commander":"The Pride of the Hull Clade","Score":1098.0,"Games":5,"Wins":0.0,"Win %":"0%","Second Commander":""}];
+
+        const tableBody = document.querySelector('#rankings-table tbody');
+
+function fetchCardArt(cardName) {
+    const url = `https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(cardName)}`;
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error fetching card: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.object === 'error') {
+                console.error(`Error: ${data.details}`);
+                return null;
+            }
+            
+            // Check for different possible image URIs
+            if (data.image_uris) {
+                return data.image_uris.art_crop || data.image_uris.normal || data.image_uris.large || null;
+            } else if (data.card_faces && data.card_faces[0].image_uris) {
+                // Handle cards with multiple faces (e.g., double-sided cards)
+                return data.card_faces[0].image_uris.art_crop || data.card_faces[0].image_uris.normal || data.card_faces[0].image_uris.large || null;
+            } else {
+                return null;
+            }
+        })
+        .catch(error => {
+            console.error(`Fetch error: ${error.message}`);
+            return null;
+        });
+}
+
+
+
+
+        function getPlayerColor(player) {
+            const colors = [
+                '#FFB6C1', '#FFD700', '#ADFF2F', '#87CEEB', '#FF69B4',
+                '#CD5C5C', '#4B0082', '#20B2AA', '#32CD32', '#FFA07A'
+            ];
+            const index = [...new Set(rankings.map(r => r.Player))].indexOf(player);
+            return colors[index % colors.length];
+        }
+
+        async function populateTable() {
+            for (let i = 0; i < rankings.length; i++) {
+                const ranking = rankings[i];
+                const row = document.createElement('tr');
+
+                const rankCell = document.createElement('td');
+                rankCell.textContent = i + 1;
+                row.appendChild(rankCell);
+
+                const playerCell = document.createElement('td');
+                playerCell.textContent = ranking.Player;
+                playerCell.className = 'player-cell';
+                playerCell.style.backgroundColor = getPlayerColor(ranking.Player);
+                row.appendChild(playerCell);
+
+                const commanderArtCell = document.createElement('td');
+                const commanderArtImg = document.createElement('img');
+                commanderArtImg.className = 'card-art';
+                const commanderArt = await fetchCardArt(ranking.Commander);
+                if (commanderArt) {
+                    commanderArtImg.src = commanderArt;
+                }
+                commanderArtCell.appendChild(commanderArtImg);
+
+                if (ranking["Second Commander"]) {
+                    const secondCommanderArtImg = document.createElement('img');
+                    secondCommanderArtImg.className = 'card-art';
+                    const secondCommanderArt = await fetchCardArt(ranking["Second Commander"]);
+                    if (secondCommanderArt) {
+                        secondCommanderArtImg.src = secondCommanderArt;
+                    }
+                    commanderArtCell.appendChild(secondCommanderArtImg);
+                }
+                row.appendChild(commanderArtCell);
+
+                const commanderCell = document.createElement('td');
+                commanderCell.innerHTML = ranking.Commander;
+                if (ranking["Second Commander"]) {
+                    commanderCell.innerHTML += `<br>${ranking["Second Commander"]}`;
+                }
+                row.appendChild(commanderCell);
+
+                Object.keys(ranking).forEach(key => {
+                    if (key !== "Player" && key !== "Commander" && key !== "Second Commander") {
+                        const cell = document.createElement('td');
+                        cell.textContent = ranking[key];
+                        row.appendChild(cell);
+                    }
+                });
+
+                tableBody.appendChild(row);
+            }
+        }
+
+        populateTable();
+    </script>
+</body>
+</html>
